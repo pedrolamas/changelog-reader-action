@@ -48,7 +48,7 @@ module.exports =
 
 const core = __webpack_require__(470)
 
-const versionSeparator = '\n## '
+const versionSeparator = /\n#{2,3}\s/
 const semverLinkRegex =
   /^\[v?(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-((?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?\]/
 const unreleasedLinkRegex = /^\[unreleased\]/i
